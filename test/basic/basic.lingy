@@ -1,0 +1,13 @@
+# This is the lingy compilation unit
+cafescript:
+- statement:
+    assignment_statement:
+    - var_name: name
+    - expression:
+        string:
+          double_quoted_string: Mickey
+- statement:
+    print_statement:
+    - expression:
+        string:
+          double_quoted_string: Hello $name

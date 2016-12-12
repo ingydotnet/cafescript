@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+
+use strict; use warnings;
+use Pegex;
+use IO::All;
+use XXX -with => 'YAML::XS';
+
+my $grammar = io("./share/cafescript.pgx")->all;
+my $input = io(shift @ARGV)->all;
+
+XXX pegex($grammar)->parse($input);
